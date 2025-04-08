@@ -186,10 +186,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
-    'djongo',
-    'corsheaders',
-    'monafit_tracker',
+    "rest_framework",
+    "djongo",
+    "corsheaders",
+    "monafit_tracker",
 ]
 
 MIDDLEWARE = [
