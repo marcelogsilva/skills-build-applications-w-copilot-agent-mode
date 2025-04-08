@@ -27,3 +27,9 @@ class LeaderboardViewSet(viewsets.ModelViewSet):
 class WorkoutViewSet(viewsets.ModelViewSet):
     queryset = Workout.objects.all()
     serializer_class = WorkoutSerializer
+
+# Example usage in a view
+class ExampleView(APIEndpointSuffixMixin, viewsets.ViewSet):
+    def list(self, request):
+        api_suffix = self.get_api_suffix()
+        return Response({"api_suffix": api_suffix})
