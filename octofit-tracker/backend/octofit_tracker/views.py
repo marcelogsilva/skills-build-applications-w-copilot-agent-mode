@@ -34,3 +34,5 @@ class ExampleView(APIEndpointSuffixMixin, viewsets.ViewSet):
     def list(self, request):
         api_suffix = self.get_api_suffix()
         return Response({"api_suffix": api_suffix})
+# This is a simple example of how to use the mixin in a view
+# to get the API endpoint suffix. You can use this in any view where you need the suffix.
