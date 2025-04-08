@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from .models import User, Team, Activity, Leaderboard, Workout
 from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, LeaderboardSerializer, WorkoutSerializer
 from django.conf import settings
+from rest_framework.response import Response
 
 class APIEndpointSuffixMixin:
     def get_api_suffix(self):
