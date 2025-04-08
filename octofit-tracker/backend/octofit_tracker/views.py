@@ -34,3 +34,4 @@ class ExampleView(APIEndpointSuffixMixin, viewsets.ViewSet):
     def list(self, request):
         api_suffix = self.get_api_suffix()
         return Response({"api_suffix": api_suffix})
+    
