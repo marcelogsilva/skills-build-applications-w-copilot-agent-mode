@@ -1,9 +1,10 @@
 from django.test import TestCase
-from .models import User, Team, Activity, Leaderboard, Workout
+from django.contrib.auth.models import User
+from .models import Team, Activity, Leaderboard, Workout
 
 class UserModelTest(TestCase):
     def test_user_creation(self):
-        user = User.objects.create(username="testuser", email="testuser@example.com", password="password123")
+        user = User.objects.create_user(username="testuser", email="testuser@example.com", password="password123")
         self.assertEqual(user.username, "testuser")
 
 class TeamModelTest(TestCase):
